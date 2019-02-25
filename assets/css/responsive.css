@@ -1,0 +1,41 @@
+@media screen and (max-width: 991px){
+.tab_content {
+	height: auto;
+	padding-top: 113px;
+}
+.contact-info-items {
+	padding-right: 81px;
+}
+.hero-area {
+	height: 687px;
+}   
+.story-colum {
+	margin-bottom: 28px;
+}
+    
+}
+
+@media screen and (max-width:565px){
+.hero-area {
+	height: 500px;
+}
+.hero-area-content h1 {
+	font-size: 37px;
+	margin: 8px 0;
+	line-height: 39px;
+}
+.hero-area-content p {
+	width: 100%;
+}
+h2 {
+	font-size: 2.0rem;
+}  
+.contact-info-items {
+	padding-right: 0;
+    padding: 20px 0;
+}
+.nav-menu-area {
+	width: 329px;
+} 
+    
+}

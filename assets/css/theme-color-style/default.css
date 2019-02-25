@@ -1,0 +1,41 @@
+/*=====================================
+		theme color style  Start
+=====================================*/
+/*Theme Color Style*/
+.section-title h2,.theme-color-style-1,.btn-get:hover,.partnering-info-item h3,.team-list li a:hover,.socail-icone li a,.tabs li.current a,.menu-item li a:hover,.menu-item .active a{
+    color: #FFAA00;
+}
+.theme-color-style-2{
+    color: #FF0040;
+}
+
+
+/*Theme bg color Style*/
+.theme-bg-style-1,.btn-sub,.socail-icone li a:hover{
+    background-color:#FFAA00;
+}
+.theme-bg-style-2{
+    background-color: #FF0040;
+}
+
+
+/*Theme border color Style*/
+.theme-border-color-style-1,.socail-icone li a:hover{
+    border-color: #FFAA00;
+}
+.theme-border-color-style-2{
+    border-color: #FF0040;
+}
+
+
+
+
+
+
+
+
+
+
+/*=====================================
+		theme color style  End
+=====================================*/
