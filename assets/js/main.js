@@ -235,7 +235,8 @@ $(function ($) {
 	});
 
 
-
+	
+	
 //	folder
 	
 	
@@ -262,7 +263,7 @@ $(function ($) {
 			height:y,
 		});
 	});
-	
+
 	
 //	Your Team
 
@@ -285,6 +286,9 @@ $(function ($) {
 	});
 
 
+
+
+	
 //	counter up
 	
 	$(window).scroll(function() {
@@ -337,8 +341,9 @@ $(function ($) {
 	
 	
 	
-
-
-
+	
+	
+	
+	
 
 })(jQuery);

@@ -670,9 +670,6 @@ svg.radial-progress text {
 .customized-img {
 	margin-bottom: 40px;
 }
-.customized-img-cp{
-    margin: 40px 0px 40px 0px;
-}
 
 .customized-button {
     margin: 50px 50px 50px 50px
@@ -812,26 +809,9 @@ svg.radial-progress text {
 /*==============================
          Page Loder style
 ===============================*/
-.loader {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 150px;
-	height: 150px;
-	background: transparent;
-	border: 3px solid #3c3c3c;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 150px;
-	font-family: sans-serif;
-	font-size: 20px;
-	color: #fff000;
-	letter-spacing: 4px;
-	text-shadow: 0 0 10px #fff000;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
 
+
+/*
 .loader::before {
 	content: '';
 	position: absolute;
@@ -845,12 +825,10 @@ svg.radial-progress text {
 	border-radius: 50%;
 	animation: animateCircle 2s linear infinite;
 }
+*/
 
-.loader img{
-	width: 50%;
-	height: auto;
-}
 
+/*
 .loader span {
 	display: block;
 	position: absolute;
@@ -874,6 +852,8 @@ svg.radial-progress text {
 	background: #fff000;
 	box-shadow: 0 0 10px #fff000;
 }
+*/
+/*
 
 @keyframes animateCircle {
 	0% {
@@ -894,6 +874,7 @@ svg.radial-progress text {
 		transform: rotate(405deg);
 	}
 }
+*/
 
 .mypreloder {
 	position: fixed;
@@ -901,10 +882,22 @@ svg.radial-progress text {
 	width: 100%;
 	height: 100vh;
 	display: table;
-	background: #1c1c1c;
+	background: #030303;
 	z-index: 999;
 	top: 0;
 	left: 0;
+}
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 150px;
+	height: 150px;
+}
+.loader img{
+	width: 100%;
+	height: auto;
 }
 
 /*==============================
@@ -1245,14 +1238,17 @@ img {
 	clip-path: polygon(25% 0, 76% 0, 100% 50%, 76% 100%, 24% 100%, 0 50.5%);
 }
 
+
+
+
 .your-team-popup {
 	height: 100%;
 	width: 100%;
 	position: fixed !important;
-	background: rgba(0, 0, 0, .9);
+	background: rgba(0, 0, 0, 1);
 	left: 0%;
 	top: 0%;
-	z-index: 99999;
+	z-index: 999;
 	box-sizing: border-box;
 	display: none;
 }
@@ -1261,9 +1257,10 @@ img {
 	position: absolute;
 	width: auto;
 	height: 90vh;
-	width: 105vh;
+	width: 106vh;
 	top: 60%;
 	left: 50%;
+	overflow: hidden;
 	transform: translate(-50%, -60%);
 	animation: popup .7s;
 	-webkit-clip-path: polygon(24.19% 0px, 75.70% 0px, 100.4% 49.88%, 75.7% 100%, 24.3% 100%, 0 49.79%);
@@ -1285,6 +1282,9 @@ img {
 .your-team-popup.open .your-team-popup-content img {
 	width: 100%;
 	height: 100%;
+	position: relative;
+	z-index: 9991;
+	pointer-events: none;
 	
 }
 
@@ -1300,7 +1300,7 @@ img {
 	display: block !important;
 }
 
-.your-team-popup .your-team-popup-content iframe {
+.your-team-popup.open .your-team-popup-content iframe {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -1308,10 +1308,10 @@ img {
 	z-index: 999;
 	height: 100%;
 	width: 140%;
-	-webkit-clip-path: polygon(33.9% 4.3%, 66.1% 4.3%, 82.3% 49.9%, 66.2% 95.7%, 34% 95.7%, 17.8% 50%);
 	clip-path: polygon(33.9% 4.3%, 66.1% 4.3%, 82.3% 49.9%, 66.2% 95.7%, 34% 95.7%, 17.8% 50%);
+	-webkit-clip-path: polygon(33.9% 4.3%, 66.1% 4.3%, 82.3% 49.9%, 66.2% 95.7%, 34% 95.7%, 17.8% 50%);
 }
-.your-team-popup .your-team-popup-content .no-video img{
+.your-team-popup.open .your-team-popup-content .no-video img{
 	position: absolute;
 	bottom: 4.4%;
 	width: 56%;
@@ -1363,6 +1363,7 @@ img {
         position: relative;
         top: 1px;
     }
+
 
 
 /*-----  Big Data ------*/
@@ -1464,4 +1465,3 @@ img {
 @media (min-height:768px) {
 	
 }
-

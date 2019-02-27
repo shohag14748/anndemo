@@ -50,6 +50,6 @@
         }
 			});
       }
-//      function stopVideo() {
-//        player.stopVideo();
-//      }
+      function stopVideo() {
+        player.stopVideo();
+      }
