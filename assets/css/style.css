@@ -1306,10 +1306,12 @@ img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 999;
-	height: 100%;
-	width: 140%;
+	height: 50%;
+	width: 100%;
+/*
 	clip-path: polygon(33.9% 4.3%, 66.1% 4.3%, 82.3% 49.9%, 66.2% 95.7%, 34% 95.7%, 17.8% 50%);
 	-webkit-clip-path: polygon(33.9% 4.3%, 66.1% 4.3%, 82.3% 49.9%, 66.2% 95.7%, 34% 95.7%, 17.8% 50%);
+*/
 }
 .your-team-popup.open .your-team-popup-content .no-video img{
 	position: absolute;

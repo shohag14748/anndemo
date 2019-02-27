@@ -9,28 +9,28 @@
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       
-//	  var player;
-//      function onYouTubeIframeAPIReady() {
-//		  $(document).ready(function(){
-//			$('.your-team .singleimage .item').on('click', function (e) {
-//				e.preventDefault();
-//				var id = $(this).children('.video').children('iframe').attr('src');
-//				var pos = id.lastIndexOf("/");
-//				res = id.slice(pos+1, id.length);
-//				
-//			
-//				player = new YT.Player('player', {
-//				  height: '390',
-//				  width: '640',
-//				  videoId: res,
-//				  events: {
-//					'onReady': onPlayerReady,
-//					'onStateChange': onPlayerStateChange
-//				  }
-//				});
-//			});
-//		});
-//      }
+	  var player;
+      function onYouTubeIframeAPIReady() {
+		  $(document).ready(function(){
+			$('.your-team .singleimage .item').on('click', function (e) {
+				e.preventDefault();
+				var id = $(this).children('.video').children('iframe').attr('src');
+				var pos = id.lastIndexOf("/");
+				res = id.slice(pos+1, id.length);
+				
+			
+				player = new YT.Player('player', {
+				  height: '390',
+				  width: '640',
+				  videoId: res,
+				  events: {
+					'onReady': onPlayerReady,
+					'onStateChange': onPlayerStateChange
+				  }
+				});
+			});
+		});
+      }
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
@@ -46,7 +46,7 @@
         if (event.data == 0) {
 				$('.your-team-popup').removeClass('open');
 				$('.your-team-popup .video').empty();
-//				$('.your-team-popup .video').append('<div id="player"></div>');
+				$('.your-team-popup .video').append('<div id="player"></div>');
         }
 			});
       }
