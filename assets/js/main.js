@@ -272,18 +272,18 @@ $(function ($) {
 		e.preventDefault();
 		if($(e.target).closest('.your-team-popup-content').length === 0){
 			$('.your-team-popup').removeClass('open');
-			$('.your-team-popup .video').empty();
-			$('.your-team-popup .video').append('<div id="player"></div>');
+//			$('.your-team-popup .video').empty();
+//			$('.your-team-popup .video').append('<div id="player"></div>');
 		}
 	});
 	$('.your-team .singleimage .item').on('click', function () {
 		$('.your-team-popup').addClass('open');
 	});
-	$('.your-team .singleimage .item').on('click', function (e) {
-		e.preventDefault();
-		var video = $(this).children('.no-video').clone();
-		$('.your-team-popup .video').prepend(video);
-	});
+//	$('.your-team .singleimage .item').on('click', function (e) {
+//		e.preventDefault();
+//		var video = $(this).children('.no-video').clone();
+//		$('.your-team-popup .video').prepend(video);
+//	});
 
 
 
