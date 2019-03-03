@@ -1286,10 +1286,10 @@ img {
 }
 .your-team-popup .button{
 	position: absolute;
-	font-size: 40px;
+	font-size: 30px;
 	top: 20px;
 	right: 20px;
-	z-index: 99992;
+	z-index: 999999;
 }
 .your-team-popup .button a{
 	color: #fff;
