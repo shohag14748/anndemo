@@ -3634,7 +3634,7 @@
 			var lw = (lp*.69);
 			$('.back .book-wrapper img').css({
 				height:lh,
-			})
+			});
 			$('.pages').turn({
 				
 				duration: 1500,
